@@ -2,9 +2,9 @@
 
 function palindrome(str){
 	const reversedStr = str.split('').reverse().join('');
-	if(reversedStr===str){
-		return true;
+	if(reversedStr!==str){
+		return false;
 	}
-	return false;
+	return true;
 }
 module.exports = palindrome
